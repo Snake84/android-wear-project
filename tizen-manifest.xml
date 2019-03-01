@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns="http://tizen.org/ns/packages" api-version="4.0"
+	package="org.diogothecoder.bfit" version="1.0.0">
+	<profile name="wearable" />
+	<ui-application appid="org.diogothecoder.bfit" exec="bfit"
+		type="capp" multiple="false" taskmanage="true" nodisplay="false">
+		<icon>bfit.png</icon>
+		<label>bfit</label>
+	</ui-application>
+</manifest>

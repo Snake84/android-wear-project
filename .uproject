@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<properties>
+   <shape>circle</shape>
+   <storyboard>
+      <view id="view1" location_x="475" location_y="10" />
+      <view id="view2" location_x="1295" location_y="10" />
+      <view id="view3" location_x="2115" location_y="10" />
+   </storyboard>
+</properties>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document>
+	<mscreen>
+		<configuration device="CIRCLE_360x360" id="config1"
+			name="common" orientation="portrait" type="common" />
+	</mscreen>
+	<views startup="view1">
+		<view id="view1" indicator="true" type="view" page_location_x="0" page_location_y="0">
+			<grid align_h="fill" align_v="fill" id="grid1" visible="true"
+				vsize_h="1000" vsize_w="1000" weight_h="1" weight_v="1">
+				<button align_h="fill" align_v="fill" disable="false" id="button1"
+					pack_h="80" pack_w="800" pack_x="100" pack_y="850" style="bottom"
+					text="Next" data_bind="" visible="true" weight_h="1" weight_v="1">
+					<event connection_wrapper="connection_view1_button1_onclicked"
+						event_name="clicked" function_name="view1_button1_onclicked"
+						signal="clicked" target="view2" />
+				</button>
+				<box align_v="fill" visible="true" weight_v="1" pack_h="435"
+					padding_h="0" weight_h="1" homogeneous="false" align_h="fill"
+					pack_w="1000" pack_x="0" pack_y="265" padding_v="0" id="box1"
+					direction="vertical">
+					<label align_h="0.5" wrap_width="0" align_v="0.5" visible="true"
+						weight_v="1" line_wrap="none" id="label1" text="First View"
+						data_bind="" weight_h="1" ellipsis="false"></label>
+				</box>
+			</grid>
+		</view>
+		<view id="view2" indicator="true" type="view" page_location_x="600" page_location_y="0">
+			<grid align_h="fill" align_v="fill" id="grid1" visible="true"
+				vsize_h="1000" vsize_w="1000" weight_h="1" weight_v="1">
+				<button align_h="fill" align_v="fill" disable="false" id="button1"
+					pack_h="80" pack_w="800" pack_x="100" pack_y="100" style="bottom"
+					text="Previous" data_bind="" visible="true" weight_h="1" weight_v="1">
+					<event connection_wrapper="connection_view2_button1_onclicked"
+						event_name="clicked" function_name="view2_button1_onclicked"
+						signal="clicked" target="view1" />
+				</button>
+				<button align_h="fill" align_v="fill" disable="false" id="button2"
+					pack_h="80" pack_w="800" pack_x="100" pack_y="850" style="bottom"
+					text="Next" data_bind="" visible="true" weight_h="1" weight_v="1">
+					<event connection_wrapper="connection_view2_button2_onclicked"
+						event_name="clicked" function_name="view2_button2_onclicked"
+						signal="clicked" target="view3" />
+				</button>
+				<box align_v="fill" visible="true" weight_v="1" pack_h="435"
+					padding_h="0" weight_h="1" homogeneous="false" align_h="fill"
+					pack_w="1000" pack_x="0" pack_y="265" padding_v="0" id="box1"
+					direction="vertical">
+					<label align_h="0.5" wrap_width="0" align_v="0.5" visible="true"
+						weight_v="1" line_wrap="none" id="label1" text="Second View"
+						data_bind="" weight_h="1" ellipsis="false"></label>
+				</box>
+			</grid>
+		</view>
+		<view id="view3" indicator="true" type="view" page_location_x="1200" page_location_y="0">
+			<grid align_h="fill" align_v="fill" id="grid1" visible="true"
+				vsize_h="1000" vsize_w="1000" weight_h="1" weight_v="1">
+				<button align_h="fill" align_v="fill" disable="false" id="button1"
+					pack_h="80" pack_w="800" pack_x="100" pack_y="100" style="bottom"
+					text="Previous" data_bind="" visible="true" weight_h="1" weight_v="1">
+					<event connection_wrapper="connection_view3_button1_onclicked"
+						event_name="clicked" function_name="view3_button1_onclicked"
+						signal="clicked" target="view2" />
+				</button>
+				<box align_v="fill" visible="true" weight_v="1" pack_h="435"
+					padding_h="0" weight_h="1" homogeneous="false" align_h="fill"
+					pack_w="1000" pack_x="0" pack_y="265" padding_v="0" id="box1"
+					direction="vertical">
+					<label align_h="0.5" wrap_width="0" align_v="0.5" visible="true"
+						weight_v="1" line_wrap="none" id="label1" text="Third View"
+						data_bind="" weight_h="1" ellipsis="false"></label>
+				</box>
+			</grid>
+		</view>
+	</views>
+</document>
